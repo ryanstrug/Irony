@@ -1,6 +1,9 @@
 # Flesch Readability Index Calculator
 This is my implementation of the Flesch Readability Index in Python.
 
+## Copyright
+This entire work is Copyright (c) 2014 Ryan Strug. All Rights Reserved.
+
 ## The title: Irony
 One of the biggest selling points of the Python programming language is its legibility, so I figured what better way to demonstrate my Python ability on GitHub than to implement Flesch's readability algorithm.
 
