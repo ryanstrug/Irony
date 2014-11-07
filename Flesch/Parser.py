@@ -17,9 +17,6 @@ class Parser:
 
     vowel_state = VOWEL_STATE_NONE
 
-    if __debug__:
-        word = ''
-
     def __init__(self, file=None):
         self.file = file
 
@@ -36,13 +33,8 @@ class Parser:
             self.syllables += self.syllables > 0 and self.vowel_state != self.VOWEL_STATE_HAS
             self.words += self.words > 0
         self.sentences += p in self.endings
-        if __debug__:
-            print(self.word, ' syl: ', self.syllables)
 
     def test_characters(self, p, c):
-        if __debug__:
-            self.word += p
-
         if p in self.vowels:
             if c not in self.vowels:
                 if p != 'e' or (c != ' ' and c != ',' and c != '\n' and c not in self.endings) or self.vowel_state == self.VOWEL_STATE_QUEUE:
@@ -56,9 +48,6 @@ class Parser:
             self.syllables += self.vowel_state != self.VOWEL_STATE_HAS
             self.words += 1
             self.vowel_state = self.VOWEL_STATE_NONE
-            if __debug__:
-                print(self.word, self.syllables)
-                self.word = ''
 
         if p in self.endings:
             self.sentences += 1
