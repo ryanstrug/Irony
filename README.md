@@ -8,7 +8,7 @@ This entire work is Copyright (c) 2014 Ryan Strug. All Rights Reserved.
 One of the biggest selling points of the Python programming language is its legibility, so I figured what better way to demonstrate my Python ability on GitHub than to implement Flesch's readability algorithm.
 
 ## The result
-This isn't done until it supports UTF-32. It very likely does not. While I would like to, the amount of effort required for that deserves to be spent on a more practical endeavour. 
+This isn't done until it supports every possible glyph in the unicode spectrum and it very likely does not. While I would like to, the amount of effort required for that deserves to be spent on a more practical endeavour.
 
 ## How to use
 The script suppports both Python 2.7 and Python 3.3 and requires no external dependencies outside the base languages.
